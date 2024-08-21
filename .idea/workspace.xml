@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/gui.java" afterDir="false" />
+    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="implemented bfs and dfs draw functionality and created classes to be improved scalability">
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/EdgeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/gui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,26 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.gui.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Nya/IdeaProjects/CPSC 320 tool/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gui.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Nya/IdeaProjects/CPSC 320 tool/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -115,7 +119,10 @@
       <workItem from="1717879052531" duration="4000" />
       <workItem from="1718297808969" duration="3000" />
       <workItem from="1718640905812" duration="24000" />
-      <workItem from="1724176626912" duration="4694000" />
+      <workItem from="1724176626912" duration="5393000" />
+      <workItem from="1724182323567" duration="462000" />
+      <workItem from="1724264808208" duration="575000" />
+      <workItem from="1724265411357" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -125,7 +132,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714328797856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented bfs and dfs draw functionality and created classes to be improved scalability">
+      <option name="closed" value="true" />
+      <created>1724181454491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724181454491</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented bfs and dfs draw functionality and created classes to be improved scalability">
+      <option name="closed" value="true" />
+      <created>1724181463672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724181463672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
   </component>
 </project>

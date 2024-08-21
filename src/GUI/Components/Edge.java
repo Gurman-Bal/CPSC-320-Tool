@@ -1,4 +1,4 @@
-package GUI;
+package GUI.Components;
 
 public class Edge {
     public Node start;
