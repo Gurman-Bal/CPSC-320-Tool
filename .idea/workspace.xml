@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="implemented bfs and dfs draw functionality and created classes to be improved scalability">
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/EdgeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
+    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters">
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/GaleShapley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/AlgorithmHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/BFSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DFSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DropDownHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/GaleShapleyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/ResgisterAlgorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/SolveButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/gui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -122,7 +128,9 @@
       <workItem from="1724176626912" duration="5393000" />
       <workItem from="1724182323567" duration="462000" />
       <workItem from="1724264808208" duration="575000" />
-      <workItem from="1724265411357" duration="4876000" />
+      <workItem from="1724265411357" duration="5252000" />
+      <workItem from="1724282092156" duration="6591000" />
+      <workItem from="1724353882143" duration="3909000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -148,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724181463672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters">
+      <option name="closed" value="true" />
+      <created>1724270559785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270559785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
+    <MESSAGE value="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters" />
   </component>
 </project>

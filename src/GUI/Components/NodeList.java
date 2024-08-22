@@ -9,8 +9,8 @@ public class NodeList {
         this.nodes = nodes;
     }
 
-    public void addNode(int x, int y) {
-        nodes.add(new Node(x, y));
+    public void addNode(int x, int y, int id) {
+        nodes.add(new Node(x, y, id));
     }
 
     public void removeNode(Node node) {
@@ -24,6 +24,15 @@ public class NodeList {
     public Node getNodeAt(int x, int y) {
         for (Node node : nodes) {
             if (Math.hypot(node.x - x, node.y - y) < 15) { // within 15 pixels
+                return node;
+            }
+        }
+        return null;
+    }
+
+    public Node getNodeById(int id) {
+        for (Node node : nodes) {
+            if (node.getId() == id) {
                 return node;
             }
         }

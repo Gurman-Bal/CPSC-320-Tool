@@ -31,7 +31,7 @@ public class MouseListeners extends MouseAdapter{
                 dragEndX = e.getX();
                 dragEndY = e.getY();
             } else {
-                nodeList.addNode(e.getX(), e.getY());
+                nodeList.addNode(e.getX(), e.getY(),nodeList.getNodes().size());
             }
         } else if (SwingUtilities.isRightMouseButton(e)) {
             Node clickedNode = nodeList.getNodeAt(e.getX(), e.getY());

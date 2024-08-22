@@ -2,7 +2,9 @@ package GUI;
 
 import Algorithms.BFS;
 import Algorithms.DFS;
+import Algorithms.GaleShapley.GaleShapley;
 import GUI.Components.*;
+import GUI.Components.SolveManager.*;
 import GUI.Listeners.MouseListeners;
 import GUI.Panels.GaleShapleyPanel;
 
@@ -35,9 +37,10 @@ public class gui extends JFrame {
         //define the algorithms
         BFS bfs = new BFS();
         DFS dfs = new DFS();
+        GaleShapley galeShapley = new GaleShapley();
 
         //create the special panels for each algorithm
-        gsPanel = new GaleShapleyPanel();
+        gsPanel = new GaleShapleyPanel(nodeList);
 
         // Set up the graph panel
         graphPanel = new JPanel() {
@@ -65,8 +68,15 @@ public class gui extends JFrame {
         algorithmDropdown.addItem("DFS");
         algorithmDropdown.addItem("Gale-Shapley");
 
-        //Create A solve button for each algorithm
-        SolveButton solveButtonHandler = new SolveButton(algorithmDropdown, nodeList, edgeList, graphPanel, bfs, dfs, gsPanel);
+        // Initialize DropDownHandler
+        DropDownHandler dropDownHandler = new DropDownHandler(algorithmDropdown,gsPanel,graphPanel);
+
+        // Initialize SolveButton with algorithm handlers
+        SolveButton solveButtonHandler = new SolveButton(dropDownHandler, nodeList, edgeList, graphPanel);
+        solveButtonHandler.registerAlgorithmHandler("BFS", new BFSHandler(bfs));
+        solveButtonHandler.registerAlgorithmHandler("DFS", new DFSHandler(dfs));
+        solveButtonHandler.registerAlgorithmHandler("Gale-Shapley", new GaleShapleyHandler(galeShapley, gsPanel));
+
         JButton solveButton = solveButtonHandler.createSolveButton();
 
         //create the panel to house all the controls
@@ -75,6 +85,10 @@ public class gui extends JFrame {
         controlPanel.add(algorithmDropdown);
         controlPanel.add(solveButton);
         add(controlPanel, BorderLayout.SOUTH);
+
+        // Add the Gale-Shapley panel to the graph panel, initially invisible
+        graphPanel.add(gsPanel.getPanel(), BorderLayout.NORTH);
+        gsPanel.getPanel().setVisible(false); // Ensure it's hidden by default
 
         setVisible(true);
     }
