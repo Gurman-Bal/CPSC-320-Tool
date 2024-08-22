@@ -58,7 +58,7 @@ public class gui extends JFrame {
         graphPanel.add(gsPanel.getPanel(), BorderLayout.NORTH);
 
         // Setup mouse listeners for creating nodes and edges
-        mouseListener = new MouseListeners(nodeList, edgeList, graphPanel::repaint);
+        mouseListener = new MouseListeners(nodeList, edgeList, graphPanel::repaint, gsPanel);
         graphPanel.addMouseListener(mouseListener);
         graphPanel.addMouseMotionListener(mouseListener);
 

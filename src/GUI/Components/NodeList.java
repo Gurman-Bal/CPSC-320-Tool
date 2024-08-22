@@ -9,8 +9,8 @@ public class NodeList {
         this.nodes = nodes;
     }
 
-    public void addNode(int x, int y, int id) {
-        nodes.add(new Node(x, y, id));
+    public void addNode(Node node) {
+        nodes.add(node);
     }
 
     public void removeNode(Node node) {

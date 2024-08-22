@@ -5,20 +5,14 @@ import GUI.Components.Node;
 import java.util.List;
 
 public class OffereeNode extends Node {
-    private List<OffererNode> preferenceList;
+    private List<OffererNode> preferences;
 
-    public OffereeNode(int id, int x, int y, List<OffererNode> preferenceList) {
+    public OffereeNode(int id, int x, int y, List<OffererNode> preferences) {
         super(id, x, y);
-        this.preferenceList = preferenceList;
+        this.preferences = preferences;
     }
 
-    public List<OffererNode> getPreferenceList() {
-        return preferenceList;
+    public List<OffererNode> getPreferences() {
+        return preferences;
     }
-
-    public void setPreferenceList(List<OffererNode> preferenceList) {
-        this.preferenceList = preferenceList;
-    }
-
-    // Add methods to interact with the preference list
 }

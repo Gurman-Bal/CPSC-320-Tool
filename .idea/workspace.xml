@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters">
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/GaleShapley.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/AlgorithmHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/BFSHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DFSHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DropDownHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/GaleShapleyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/ResgisterAlgorithms.java" afterDir="false" />
+    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="broke up SolveButton into many classes to improve readabilty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Components/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/SolveManager/SolveButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/gui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +120,7 @@
       <workItem from="1724264808208" duration="575000" />
       <workItem from="1724265411357" duration="5252000" />
       <workItem from="1724282092156" duration="6591000" />
-      <workItem from="1724353882143" duration="3909000" />
+      <workItem from="1724353882143" duration="4896000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -164,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724270559785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="broke up SolveButton into many classes to improve readabilty">
+      <option name="closed" value="true" />
+      <created>1724358332248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724358332248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +183,7 @@
     <MESSAGE value="start" />
     <MESSAGE value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
     <MESSAGE value="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters" />
+    <MESSAGE value="broke up SolveButton into many classes to improve readabilty" />
+    <option name="LAST_COMMIT_MESSAGE" value="broke up SolveButton into many classes to improve readabilty" />
   </component>
 </project>
