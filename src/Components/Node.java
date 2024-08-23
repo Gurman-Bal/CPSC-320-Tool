@@ -1,4 +1,4 @@
-package GUI.Components;
+package Components;
 
 public class Node {
     public int x;

@@ -1,7 +1,7 @@
-package GUI.Components.SolveManager;
+package Components.SolveManager;
 
-import GUI.Components.EdgeList;
-import GUI.Components.NodeList;
+import Components.EdgeList;
+import Components.NodeList;
 
 import javax.swing.*;
 import java.util.HashMap;

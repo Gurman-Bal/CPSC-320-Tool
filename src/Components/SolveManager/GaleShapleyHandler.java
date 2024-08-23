@@ -1,8 +1,8 @@
-package GUI.Components.SolveManager;
+package Components.SolveManager;
 
 import Algorithms.GaleShapley.GaleShapley;
-import GUI.Components.Edge;
-import GUI.Components.Node;
+import Components.Edge;
+import Components.Node;
 import GUI.Panels.GaleShapleyPanel;
 
 import javax.swing.*;

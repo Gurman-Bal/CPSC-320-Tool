@@ -1,4 +1,4 @@
-package GUI.Components.SolveManager;
+package Components.SolveManager;
 
 import GUI.Panels.GaleShapleyPanel;
 
@@ -8,6 +8,7 @@ public class DropDownHandler {
     private JComboBox<String> algorithmDropdown;
     private GaleShapleyPanel gsPanel;
     private JPanel graphPanel;
+    public String selectedAlgorithm;
 
     public DropDownHandler(JComboBox<String> algorithmDropdown, GaleShapleyPanel gsPanel,JPanel graphPanel) {
         this.algorithmDropdown = algorithmDropdown;
@@ -22,7 +23,7 @@ public class DropDownHandler {
     }
 
     private void updatePanelVisibility() {
-        String selectedAlgorithm = (String) algorithmDropdown.getSelectedItem();
+        selectedAlgorithm = (String) algorithmDropdown.getSelectedItem();
         if ("Gale-Shapley".equals(selectedAlgorithm)) {
             gsPanel.setVisible(true);
         } else {
@@ -30,5 +31,9 @@ public class DropDownHandler {
         }
         graphPanel.revalidate();
         graphPanel.repaint();
+    }
+
+    public boolean isGSPanelVisible() {
+        return "Gale-Shapley".equals(selectedAlgorithm);
     }
 }

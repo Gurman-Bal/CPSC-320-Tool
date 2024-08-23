@@ -1,12 +1,9 @@
-package GUI.Components.SolveManager;
+package Components.SolveManager;
 
 import Algorithms.BFS;
 import Algorithms.DFS;
 import Algorithms.GaleShapley.GaleShapley;
-import GUI.Components.EdgeList;
-import GUI.Components.NodeList;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class ResgisterAlgorithms {

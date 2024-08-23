@@ -3,9 +3,10 @@ package GUI;
 import Algorithms.BFS;
 import Algorithms.DFS;
 import Algorithms.GaleShapley.GaleShapley;
-import GUI.Components.*;
-import GUI.Components.SolveManager.*;
-import GUI.Listeners.MouseListeners;
+import Algorithms.GaleShapley.OffereeNode;
+import Components.*;
+import Components.SolveManager.*;
+import Components.Listeners.MouseListeners;
 import GUI.Panels.GaleShapleyPanel;
 
 import javax.swing.*;
@@ -57,11 +58,6 @@ public class gui extends JFrame {
         //add each algorithm panel to the parent panel
         graphPanel.add(gsPanel.getPanel(), BorderLayout.NORTH);
 
-        // Setup mouse listeners for creating nodes and edges
-        mouseListener = new MouseListeners(nodeList, edgeList, graphPanel::repaint, gsPanel);
-        graphPanel.addMouseListener(mouseListener);
-        graphPanel.addMouseMotionListener(mouseListener);
-
         // Define the dropdown menu for algorithm selection
         JComboBox<String> algorithmDropdown = new JComboBox<>();
         algorithmDropdown.addItem("BFS");
@@ -70,6 +66,11 @@ public class gui extends JFrame {
 
         // Initialize DropDownHandler
         DropDownHandler dropDownHandler = new DropDownHandler(algorithmDropdown,gsPanel,graphPanel);
+
+        // Setup mouse listeners for creating nodes and edges
+        mouseListener = new MouseListeners(nodeList, edgeList, graphPanel::repaint, dropDownHandler,gsPanel);
+        graphPanel.addMouseListener(mouseListener);
+        graphPanel.addMouseMotionListener(mouseListener);
 
         // Initialize SolveButton with algorithm handlers
         SolveButton solveButtonHandler = new SolveButton(dropDownHandler, nodeList, edgeList, graphPanel);
@@ -101,9 +102,15 @@ public class gui extends JFrame {
         }
 
         // Draw nodes
-        g.setColor(Color.BLUE);
+
         for (Node node : nodes) {
-            g.fillOval(node.x - 15, node.y - 15, 30, 30);
+            if(node.getClass().equals(OffereeNode.class)){
+                g.setColor(Color.CYAN);
+                g.fillOval(node.x - 15, node.y - 15, 30, 30);
+            } else {
+                g.setColor(Color.BLUE);
+                g.fillOval(node.x - 15, node.y - 15, 30, 30);
+            }
         }
     }
 

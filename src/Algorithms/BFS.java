@@ -1,7 +1,7 @@
 package Algorithms;
 
-import GUI.Components.Edge;
-import GUI.Components.Node;
+import Components.Edge;
+import Components.Node;
 
 import java.awt.*;
 import java.util.*;

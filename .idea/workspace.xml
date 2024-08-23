@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="broke up SolveButton into many classes to improve readabilty">
+    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="created the base ui introducing bugs&#10;TODO:&#10; -fix node placement and allow toggling with mouse click&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/DFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/EdgeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/EdgeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/NodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NodeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/AlgorithmHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/AlgorithmHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/BFSHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/BFSHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DFSHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/DFSHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/DropDownHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/DropDownHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/GaleShapleyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/GaleShapleyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/ResgisterAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/ResgisterAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Components/SolveManager/SolveButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/SolveButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Listeners/MouseListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Listeners/MouseListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/gui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -51,26 +69,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gui.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Nya/IdeaProjects/CPSC 320 tool/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.gui.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "GaleShapleyWork",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Nya/IdeaProjects/CPSC 320 tool/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -120,7 +138,8 @@
       <workItem from="1724264808208" duration="575000" />
       <workItem from="1724265411357" duration="5252000" />
       <workItem from="1724282092156" duration="6591000" />
-      <workItem from="1724353882143" duration="4896000" />
+      <workItem from="1724353882143" duration="5165000" />
+      <workItem from="1724435528349" duration="5592000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -162,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724358332248</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created the base ui introducing bugs&#10;TODO:&#10; -fix node placement and allow toggling with mouse click&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve">
+      <option name="closed" value="true" />
+      <created>1724359337793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724359337793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +211,7 @@
     <MESSAGE value="implemented bfs and dfs draw functionality and created classes to be improved scalability" />
     <MESSAGE value="created classes to improve code readability and scalability. &#10;Created the ability to have unique panels for each algorithm to specify parameters" />
     <MESSAGE value="broke up SolveButton into many classes to improve readabilty" />
-    <option name="LAST_COMMIT_MESSAGE" value="broke up SolveButton into many classes to improve readabilty" />
+    <MESSAGE value="created the base ui introducing bugs&#10;TODO:&#10; -fix node placement and allow toggling with mouse click&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve" />
+    <option name="LAST_COMMIT_MESSAGE" value="created the base ui introducing bugs&#10;TODO:&#10; -fix node placement and allow toggling with mouse click&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve" />
   </component>
 </project>

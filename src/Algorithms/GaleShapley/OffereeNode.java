@@ -1,18 +1,18 @@
 package Algorithms.GaleShapley;
 
-import GUI.Components.Node;
+import Components.Node;
 
 import java.util.List;
 
 public class OffereeNode extends Node {
-    private List<OffererNode> preferences;
+    private List<String> preferences;
 
-    public OffereeNode(int id, int x, int y, List<OffererNode> preferences) {
-        super(id, x, y);
+    public OffereeNode(int id, int x, int y, List<String> preferences) {
+        super(x, y, id);
         this.preferences = preferences;
     }
 
-    public List<OffererNode> getPreferences() {
+    public List<String> getPreferences() {
         return preferences;
     }
 }

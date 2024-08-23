@@ -1,15 +1,16 @@
 package Algorithms.GaleShapley;
 
-import GUI.Components.Node;
+import Components.Node;
 
 import java.util.List;
 
 public class OffererNode extends Node {
     private int slots;
-    private List<OffereeNode> preferences;
+    private List<String> preferences;
 
-    public OffererNode(int id, int x, int y, int slots, List<OffereeNode> preferences) {
-        super(id, x, y);
+
+    public OffererNode(int id, int x, int y, int slots, List<String> preferences) {
+        super(x, y, id);
         this.slots = slots;
         this.preferences = preferences;
     }
@@ -18,7 +19,7 @@ public class OffererNode extends Node {
         return slots;
     }
 
-    public List<OffereeNode> getPreferences() {
+    public List<String> getPreferences() {
         return preferences;
     }
 }

@@ -1,4 +1,4 @@
-package GUI.Components;
+package Components;
 
 import java.util.List;
 
