@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="allow the proper handling of drawing gs nodes&#10;TODO:&#10; -implement the lists,slot imput&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve">
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/Pair.java" afterDir="false" />
+    <list default="true" id="664c59c6-a1cb-48f5-807d-d3834431a6d4" name="Changes" comment="implemented base gs algorithm&#10;finalized panel to take inputs&#10;TODO:&#10; -clean up gui for gspanel&#10; -implement reductions to use gs algorithm with multiple slots&#10; -test gs algorithm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/GaleShapley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/GaleShapley.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffereeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/GaleShapley/OffererNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SolveManager/GaleShapleyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/GaleShapleyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SolveManager/ResgisterAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SolveManager/ResgisterAlgorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Panels/GaleShapleyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +123,7 @@
       <workItem from="1724353882143" duration="5165000" />
       <workItem from="1724435528349" duration="6358000" />
       <workItem from="1724774883581" duration="8589000" />
+      <workItem from="1724784406852" duration="977000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -187,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724442661006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implemented base gs algorithm&#10;finalized panel to take inputs&#10;TODO:&#10; -clean up gui for gspanel&#10; -implement reductions to use gs algorithm with multiple slots&#10; -test gs algorithm">
+      <option name="closed" value="true" />
+      <created>1724784881106</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724784881106</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +213,7 @@
     <MESSAGE value="broke up SolveButton into many classes to improve readabilty" />
     <MESSAGE value="created the base ui introducing bugs&#10;TODO:&#10; -fix node placement and allow toggling with mouse click&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve" />
     <MESSAGE value="allow the proper handling of drawing gs nodes&#10;TODO:&#10; -implement the lists,slot imput&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve" />
-    <option name="LAST_COMMIT_MESSAGE" value="allow the proper handling of drawing gs nodes&#10;TODO:&#10; -implement the lists,slot imput&#10; -show preference lists on each node&#10; - ensure all the information is send to the solver class when its time to solve" />
+    <MESSAGE value="implemented base gs algorithm&#10;finalized panel to take inputs&#10;TODO:&#10; -clean up gui for gspanel&#10; -implement reductions to use gs algorithm with multiple slots&#10; -test gs algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented base gs algorithm&#10;finalized panel to take inputs&#10;TODO:&#10; -clean up gui for gspanel&#10; -implement reductions to use gs algorithm with multiple slots&#10; -test gs algorithm" />
   </component>
 </project>
