@@ -2,6 +2,7 @@ package GUI.Panels;
 
 import Algorithms.GaleShapley.OffereeNode;
 import Algorithms.GaleShapley.OffererNode;
+import Components.Node;
 import Components.NodeList;
 
 import javax.swing.*;
@@ -38,14 +39,14 @@ public class GaleShapleyPanel {
         panel.add(new JLabel("Preferences (comma-separated):"));
         panel.add(preferenceField);
 
-        JButton toggleModeButton = new JButton("Toggle Node Type");
-        toggleModeButton.addActionListener(e -> toggleNodeType());
+//        JButton toggleModeButton = new JButton("Toggle Node Type");
+//        toggleModeButton.addActionListener(e -> toggleNodeType());
 
-        JButton addButton = new JButton("Add Node");
-        addButton.addActionListener(e -> addNode());
+//        JButton addButton = new JButton("Add Node");
+//        addButton.addActionListener(e -> addNode());
 
-        panel.add(toggleModeButton);
-        panel.add(addButton);
+       // panel.add(toggleModeButton);
+        //panel.add(addButton);
 
         // Initially set the panel to be visible
         panel.setVisible(true);
@@ -78,40 +79,56 @@ public class GaleShapleyPanel {
 
     public void handleGaleShapleyNodeCreation(int x, int y) {
         // Show a dialog to get node details
-        JTextField nameField = new JTextField(10);
-        JTextField preferenceField = new JTextField(30);
-        JTextField slotField = new JTextField(5);
-
-        JPanel dialogPanel = new JPanel();
-        dialogPanel.add(new JLabel("Node Name:"));
-        dialogPanel.add(nameField);
-        dialogPanel.add(Box.createHorizontalStrut(15)); // Spacing
-        dialogPanel.add(new JLabel("Preferences (comma-separated):"));
-        dialogPanel.add(preferenceField);
-        dialogPanel.add(Box.createHorizontalStrut(15)); // Spacing
-        dialogPanel.add(new JLabel("Slots (Offerer only):"));
-        dialogPanel.add(slotField);
-
-        int result = JOptionPane.showConfirmDialog(null, dialogPanel,
-                "Enter Node Details", JOptionPane.OK_CANCEL_OPTION);
-
-        if (result == JOptionPane.OK_OPTION) {
-            String nodeName = nameField.getText();
-            String[] preferencesArray = preferenceField.getText().split(",");
-            List<String> preferences = new ArrayList<>();
-            for (String pref : preferencesArray) {
-                preferences.add(pref.trim());
-            }
-
-            if (!slotField.getText().isEmpty()) {
-                int slots = Integer.parseInt(slotField.getText());
-                OffererNode newNode = new OffererNode(nodeList.getNodes().size(), x, y, slots, preferences);
-                nodeList.addNode(newNode);
-            } else {
-                OffereeNode newNode = new OffereeNode(nodeList.getNodes().size(), x, y, preferences);
-                nodeList.addNode(newNode);
-            }
+//        JTextField nameField = new JTextField(10);
+//        JTextField preferenceField = new JTextField(30);
+//        JTextField slotField = new JTextField(5);
+//
+//        JPanel dialogPanel = new JPanel();
+//        dialogPanel.add(new JLabel("Node Name:"));
+//        dialogPanel.add(nameField);
+//        dialogPanel.add(Box.createHorizontalStrut(15)); // Spacing
+//        dialogPanel.add(new JLabel("Preferences (comma-separated):"));
+//        dialogPanel.add(preferenceField);
+//        dialogPanel.add(Box.createHorizontalStrut(15)); // Spacing
+//        dialogPanel.add(new JLabel("Slots (Offerer only):"));
+//        dialogPanel.add(slotField);
+//
+//        int result = JOptionPane.showConfirmDialog(null, dialogPanel,
+//                "Enter Node Details", JOptionPane.OK_CANCEL_OPTION);
+//
+//        if (result == JOptionPane.OK_OPTION) {
+//            String nodeName = nameField.getText();
+//            String[] preferencesArray = preferenceField.getText().split(",");
+//            List<String> preferences = new ArrayList<>();
+//            for (String pref : preferencesArray) {
+//                preferences.add(pref.trim());
+//            }
+//
+//            if (!slotField.getText().isEmpty()) {
+//                int slots = Integer.parseInt(slotField.getText());
+//                OffererNode newNode = new OffererNode(nodeList.getNodes().size(), x, y, slots, preferences);
+//                nodeList.addNode(newNode);
+//            } else {
+//                OffereeNode newNode = new OffereeNode(nodeList.getNodes().size(), x, y, preferences);
+//                nodeList.addNode(newNode);
+//            }
+//        }
+        String nodeName = nameField.getText();
+        String[] preferencesArray = preferenceField.getText().split(",");
+        List<String> preferences = new ArrayList<>();
+        for (String pref : preferencesArray) {
+            preferences.add(pref.trim());
         }
+
+        if (!slotField.getText().isEmpty()) {
+            int slots = Integer.parseInt(slotField.getText());
+            OffererNode newNode = new OffererNode(nodeList.getNodes().size(), x, y, slots, preferences);
+            nodeList.addNode(newNode);
+        } else {
+            OffereeNode newNode = new OffereeNode(nodeList.getNodes().size(), x, y, preferences);
+            nodeList.addNode(newNode);
+        }
+
     }
 
     public void setVisible(boolean visible) {

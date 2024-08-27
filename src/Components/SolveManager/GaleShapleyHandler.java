@@ -20,7 +20,7 @@ public class GaleShapleyHandler implements AlgorithmHandler {
     @Override
     public void execute(List<Node> nodes, List<Edge> edges, JPanel graphPanel) {
         if (!nodes.isEmpty()) {
-            galeShapley.preformGaleShapley();
+            galeShapley.preformGaleShapley(nodes, graphPanel);
         } else {
             JOptionPane.showMessageDialog(graphPanel, "No nodes available to start Gale-Shapley.", "Error", JOptionPane.ERROR_MESSAGE);
         }

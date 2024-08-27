@@ -35,7 +35,7 @@ public class ResgisterAlgorithms {
 
         solveButtonHandler.registerAlgorithmHandler("Gale-Shapley", (nodes, edges, panel) -> {
             if (!nodes.isEmpty()) {
-                galeShapley.preformGaleShapley();
+                galeShapley.preformGaleShapley(nodes,panel);
             } else {
                 solveButtonHandler.showError("No nodes available to start Gale-Shapley.");
             }
